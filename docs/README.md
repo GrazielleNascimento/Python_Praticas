@@ -84,6 +84,52 @@ Este repositório contém os exercícios práticos desenvolvidos durante o curso
 
 ---
 
+## 🎯 Atividade Prática 03
+
+### 1. Classificação de Faixa Etária
+- **Objetivo:** Criar um programa que classifica a idade do usuário em diferentes categorias.
+- **Classificações:**
+  - Criança: 0-12 anos
+  - Adolescente: 13-17 anos
+  - Adulto: 18-59 anos
+  - Idoso: 60+ anos
+- **Arquivo:** `pratica-03/1_faixa_etaria.py`
+- **Conceitos:** Estruturas condicionais, entrada de dados, classificação
+- **Resultado:** O programa deve solicitar a idade e exibir a categoria correspondente
+
+### 2. Calculadora de IMC
+- **Objetivo:** Desenvolver um programa que calcula o Índice de Massa Corporal e classifica o resultado.
+- **Classificações IMC:**
+  - Abaixo do peso: < 18,5
+  - Peso normal: 18,5 - 24,9
+  - Sobrepeso: 25,0 - 29,9
+  - Obesidade: ≥ 30,0
+- **Arquivo:** `pratica-03/2_calculadora_imc.py`
+- **Conceitos:** Cálculos matemáticos, classificação por faixas, entrada de dados
+- **Resultado:** O programa deve calcular o IMC e fornecer a classificação com recomendações
+
+### 3. Conversor de Temperatura
+- **Objetivo:** Criar um programa que converte temperaturas entre Celsius, Fahrenheit e Kelvin.
+- **Conversões disponíveis:**
+  - Celsius ↔ Fahrenheit
+  - Celsius ↔ Kelvin
+  - Fahrenheit ↔ Kelvin
+- **Arquivo:** `pratica-03/3_conversor_temperatura.py`
+- **Conceitos:** Menu de opções, fórmulas de conversão, validação de dados
+- **Resultado:** O programa deve oferecer múltiplas opções de conversão com validação
+
+### 4. Verificador de Ano Bissexto
+- **Objetivo:** Desenvolver um programa que verifica se um ano é bissexto seguindo as regras do calendário gregoriano.
+- **Regras:**
+  - Divisível por 4: É bissexto
+  - Divisível por 100: NÃO é bissexto (exceto próxima regra)
+  - Divisível por 400: É bissexto
+- **Arquivo:** `pratica-03/4_verificador_bissexto.py`
+- **Conceitos:** Lógica booleana, operadores módulo, regras complexas
+- **Resultado:** O programa deve verificar o ano e explicar o resultado
+
+---
+
 ## 🚀 Como Executar
 
 ### Pré-requisitos
@@ -97,6 +143,8 @@ Este repositório contém os exercícios práticos desenvolvidos durante o curso
    cd pratica-01
    # ou
    cd pratica-02
+   # ou
+   cd pratica-03
    ```
 
 2. **Execute qualquer exercício:**
@@ -174,6 +222,44 @@ O programa deve calcular o consumo médio (km/l) e exibir todos os dados da viag
 
 ---
 
+## 🎯 Atividade Prática 03
+
+### 1- Classificação de Faixa Etária
+Crie um programa que classifica a idade do usuário em diferentes categorias:
+* Criança: 0-12 anos
+* Adolescente: 13-17 anos  
+* Adulto: 18-59 anos
+* Idoso: 60+ anos
+
+O programa deve solicitar a idade do usuário e exibir a categoria correspondente com uma mensagem personalizada.
+
+### 2- Calculadora de IMC (Índice de Massa Corporal)
+Desenvolva um programa que calcula o IMC e classifica o resultado de acordo com os padrões da OMS:
+* Abaixo do peso: IMC < 18,5
+* Peso normal: IMC 18,5 - 24,9
+* Sobrepeso: IMC 25,0 - 29,9
+* Obesidade: IMC ≥ 30,0
+
+O programa deve solicitar peso e altura, calcular o IMC e fornecer a classificação com recomendações de saúde.
+
+### 3- Conversor de Temperatura
+Crie um programa que converte temperaturas entre as escalas Celsius, Fahrenheit e Kelvin. O programa deve:
+* Apresentar um menu com 6 opções de conversão
+* Solicitar a temperatura a ser convertida
+* Realizar a conversão usando as fórmulas corretas
+* Validar temperaturas impossíveis (abaixo do zero absoluto)
+* Exibir o resultado com duas casas decimais
+
+### 4- Verificador de Ano Bissexto
+Desenvolva um programa que verifica se um ano é bissexto seguindo as regras do calendário gregoriano:
+* Se divisível por 4: é bissexto
+* Se divisível por 100: NÃO é bissexto (exceto próxima regra)
+* Se divisível por 400: é bissexto
+
+O programa deve solicitar um ano, verificar se é bissexto e explicar o resultado com exemplos práticos.
+
+---
+
 ## 📖 Conceitos Aprendidos
 
 ### Fundamentos de Python
@@ -184,17 +270,43 @@ O programa deve calcular o consumo médio (km/l) e exibir todos os dados da viag
 - ✅ Comentários em código
 - ✅ Entrada de dados com `input()`
 
+### Estruturas de Controle
+- ✅ Estruturas condicionais (`if`, `elif`, `else`)
+- ✅ Operadores de comparação
+- ✅ Operadores lógicos
+- ✅ Validação de dados
+- ✅ Menu de opções
+
 ### Operações Matemáticas
 - ✅ Adição, subtração, multiplicação, divisão
 - ✅ Cálculo de porcentagens
 - ✅ Arredondamento de números
 - ✅ Média aritmética
+- ✅ Operador módulo (%)
+- ✅ Potenciação
+
+### Conceitos Avançados
+- ✅ Funções personalizadas
+- ✅ Classificação por faixas/categorias
+- ✅ Conversões entre unidades
+- ✅ Validação de entrada
+- ✅ Tratamento de exceções
+- ✅ Lógica booleana complexa
+
+### Aplicações Práticas
+- ✅ Cálculos de saúde (IMC)
+- ✅ Conversões de temperatura
+- ✅ Verificação de regras de calendário
+- ✅ Classificação etária
+- ✅ Sistemas de recomendação
 
 ### Boas Práticas
 - ✅ Organização de código
 - ✅ Comentários explicativos
 - ✅ Nomes descritivos de variáveis
 - ✅ Formatação de saída legível
+- ✅ Modularização com funções
+- ✅ Validação robusta de dados
 
 ---
 
