@@ -130,6 +130,55 @@ Este repositório contém os exercícios práticos desenvolvidos durante o curso
 
 ---
 
+## 🎯 Atividade Prática 04
+
+### 1. Calculadora Simples
+- **Objetivo:** Criar um programa que simule uma calculadora básica com operações fundamentais.
+- **Operações:** Adição (+), Subtração (-), Multiplicação (*), Divisão (/)
+- **Funcionalidades:**
+  - Solicitar dois números reais
+  - Escolha da operação desejada
+  - Tratamento de divisão por zero
+  - Validação de operações inválidas
+- **Arquivo:** `pratica-04/1_calculadora_simples.py`
+- **Conceitos:** Loops, validação de entrada, tratamento de exceções, funções
+- **Resultado:** O programa deve continuar até realizar uma operação válida com sucesso
+
+### 2. Registro de Notas e Cálculo da Média
+- **Objetivo:** Desenvolver um sistema para registrar notas de uma turma e calcular estatísticas.
+- **Funcionalidades:**
+  - Entrada contínua de notas até digitar "fim"
+  - Validação de notas entre 0 e 10
+  - Cálculo da média da turma
+  - Estatísticas detalhadas
+- **Arquivo:** `pratica-04/2_registro_notas.py`
+- **Conceitos:** Listas, loops while, validação, estatísticas, formatação
+- **Resultado:** Exibir média com duas casas decimais e total de notas válidas
+
+### 3. Verificador de Senhas Fortes
+- **Objetivo:** Criar um programa que avalia a força de senhas informadas pelo usuário.
+- **Critérios de validação:**
+  - Pelo menos 8 caracteres
+  - Presença de números
+  - Letras maiúsculas e minúsculas
+  - Caracteres especiais
+- **Arquivo:** `pratica-04/3_verificador_senhas.py`
+- **Conceitos:** Expressões regulares, validação complexa, loops, análise de strings
+- **Resultado:** Continuar até senha forte ou usuário digitar "sair"
+
+### 4. Analisador de Números Pares e Ímpares
+- **Objetivo:** Desenvolver um programa que classifica números inteiros e gera estatísticas.
+- **Funcionalidades:**
+  - Classificação como par ou ímpar
+  - Entrada contínua até "fim"
+  - Contagem de pares e ímpares
+  - Estatísticas matemáticas detalhadas
+- **Arquivo:** `pratica-04/4_analisador_numeros.py`
+- **Conceitos:** Operador módulo, contadores, estatísticas, análise de dados
+- **Resultado:** Exibir quantidade total de números pares e ímpares com estatísticas
+
+---
+
 ## 🚀 Como Executar
 
 ### Pré-requisitos
@@ -145,6 +194,8 @@ Este repositório contém os exercícios práticos desenvolvidos durante o curso
    cd pratica-02
    # ou
    cd pratica-03
+   # ou
+   cd pratica-04
    ```
 
 2. **Execute qualquer exercício:**
@@ -260,6 +311,41 @@ O programa deve solicitar um ano, verificar se é bissexto e explicar o resultad
 
 ---
 
+## 🎯 Atividade Prática 04
+
+### 1- Calculadora Simples
+Crie um programa que simule uma calculadora básica com as seguintes funcionalidades:
+* Solicite ao usuário dois números reais
+* Peça a operação desejada (+, -, *, /)
+* Realize a operação escolhida e exiba o resultado
+* Trate divisões por zero e operações inválidas com mensagens apropriadas
+
+O programa deve continuar solicitando entradas até que uma operação válida seja realizada com sucesso.
+
+### 2- Registro de Notas e Cálculo da Média
+Desenvolva um programa para registrar notas de uma turma e calcular a média final. Siga as instruções abaixo:
+* O programa deve solicitar notas continuamente até o usuário digitar "fim"
+* Somente notas entre 0 e 10 devem ser aceitas
+* Ao final, exiba a média da turma com duas casas decimais e o total de notas válidas registradas
+* Trate entradas inválidas com mensagens de erro
+
+### 3- Verificador de Senhas Fortes
+Crie um programa que avalia a força de uma senha informada pelo usuário. O programa deve:
+* Solicitar a senha até que o usuário digite "sair"
+* Verificar se a senha possui pelo menos 8 caracteres
+* Verificar se contém pelo menos um número
+* Informar se a senha é fraca ou forte
+* Encerrar o programa apenas quando a senha for forte ou se o usuário digitar "sair"
+
+### 4- Analisador de Números Pares e Ímpares
+Desenvolva um programa que classifica números inteiros como pares ou ímpares. O programa deve:
+* Solicitar números inteiros até que o usuário digite "fim"
+* Informar se o número digitado é par ou ímpar
+* Ao final, exibir a quantidade total de números pares e ímpares informados
+* Tratar entradas inválidas com mensagens de erro apropriadas
+
+---
+
 ## 📖 Conceitos Aprendidos
 
 ### Fundamentos de Python
@@ -292,6 +378,11 @@ O programa deve solicitar um ano, verificar se é bissexto e explicar o resultad
 - ✅ Validação de entrada
 - ✅ Tratamento de exceções
 - ✅ Lógica booleana complexa
+- ✅ Loops while infinitos
+- ✅ Expressões regulares (regex)
+- ✅ Manipulação de listas
+- ✅ Análise estatística de dados
+- ✅ Sistemas de validação complexa
 
 ### Aplicações Práticas
 - ✅ Cálculos de saúde (IMC)
@@ -299,6 +390,10 @@ O programa deve solicitar um ano, verificar se é bissexto e explicar o resultad
 - ✅ Verificação de regras de calendário
 - ✅ Classificação etária
 - ✅ Sistemas de recomendação
+- ✅ Calculadoras interativas
+- ✅ Sistemas de registro e estatísticas
+- ✅ Avaliação de segurança (senhas)
+- ✅ Análise matemática de sequências
 
 ### Boas Práticas
 - ✅ Organização de código
