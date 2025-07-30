@@ -346,6 +346,111 @@ Desenvolva um programa que classifica números inteiros como pares ou ímpares. 
 
 ---
 
+## 🎯 Atividade Prática 05
+
+### 1- Calculadora de Gorjeta
+Crie um programa que calcula o valor da gorjeta a partir do total da conta e da porcentagem escolhida. Use as instruções abaixo:
+* Defina o valor da conta (ex: R$ 100,00).
+* Informe a porcentagem da gorjeta (ex: 10%, 15%, 20%).
+* O programa deve calcular o valor correspondente e exibir o resultado com duas casas decimais.
+
+### 2- Verificador de Palíndromos
+Crie um programa que verifica se uma palavra ou frase é um palíndromo, ou seja, se pode ser lida da mesma forma de trás para frente, desconsiderando espaços, acentos e pontuação. Para isso:
+* Solicite ao usuário uma palavra ou frase.
+* Desconsidere letras maiúsculas, espaços e sinais de pontuação.
+* Verifique se a frase é um palíndromo.
+* Exiba "Sim" se for palíndromo ou "Não" se não for.
+Exemplo: A frase "A cara rajada da jararaca" deve ser reconhecida como um palíndromo.
+
+### 3- Calculadora de Desconto em Produto
+Desenvolva um programa que aplica um desconto sobre o preço de um produto. O programa deve:
+* Solicitar o preço original do produto.
+* Solicitar o percentual de desconto desejado.
+* Calcular e exibir o preço final com desconto, arredondado para duas casas decimais.
+
+### 4- Calculadora de Idade em Dias
+Crie um programa que calcula a idade aproximada de uma pessoa em dias. Para isso:
+* Solicite o ano de nascimento da pessoa.
+* Considere o ano atual automaticamente.
+* Calcule a idade em anos e transforme em dias (desconsidere anos bissextos).
+* Exiba o resultado final.
+
+---
+
+## 🎯 Atividade Prática 06
+
+### 1- Gerador de Senhas Seguras
+Crie um programa que gera senhas aleatórias com letras, números e caracteres especiais. Siga as instruções abaixo:
+* Solicite ao usuário o tamanho da senha desejada (por exemplo: 8, 12, 16 caracteres).
+* A senha gerada deve conter letras maiúsculas, minúsculas, números e símbolos (ex: !@#$%&*).
+* Exiba a senha gerada ao final do programa.
+Dica: Use os módulos `random` e `string` para gerar os caracteres aleatórios.
+
+### 2- Gerador de Usuário Aleatório
+Crie um programa que acessa uma API pública e exibe informações de um usuário fictício. Para isso:
+* Use a API pública "https://randomuser.me/api/" para obter dados aleatórios.
+* Mostre na tela: nome completo, e-mail e país do usuário.
+* O programa deve tratar possíveis erros de conexão ou falha na API.
+Dica: Utilize o módulo `requests` para fazer a requisição e o método `.json()` para acessar os dados.
+
+### 3- Consulta de CEP
+Desenvolva um programa que consulta dados de endereço a partir de um CEP brasileiro. Siga os passos abaixo:
+* Solicite ao usuário que digite um CEP (apenas números, sem traço).
+* Acesse a API pública do ViaCEP: "https://viacep.com.br/ws/{cep}/json/".
+* Exiba as seguintes informações: logradouro, bairro, cidade, estado e o próprio CEP.
+* Caso o CEP não exista ou haja erro, informe isso de forma clara ao usuário.
+Dica: Use o módulo `requests` e trate exceções com `try/except`.
+
+### 4- Conversor de Moedas (para Reais - BRL)
+Crie um programa que mostra a cotação atual de moedas estrangeiras em relação ao Real. O programa deve:
+* Solicitar ao usuário o código da moeda estrangeira (ex: USD, EUR, GBP).
+* Acessar a API: "https://economia.awesomeapi.com.br/last/{moeda}-BRL".
+* Exibir a cotação atual, o valor máximo, o valor mínimo e a data/hora da última atualização.
+* Informar ao usuário se o código da moeda for inválido ou houver falha na conexão.
+Dica: A conversão da data/hora pode ser feita com o módulo `datetime`.
+
+---
+
+## 🎯 Atividade Prática 07
+
+### 1- Processamento de Logs de Treinamento
+Crie um programa que analisa um arquivo CSV contendo dados de execução de um processo de treinamento. O programa deve:
+* Solicitar ao usuário o nome do arquivo CSV (ex: logs_treinamento.csv).
+* Ler os dados usando a biblioteca `pandas`.
+* Calcular a média e o desvio padrão da coluna `tempo_execucao`.
+* Exibir os resultados com duas casas decimais.
+* Tratar erros como arquivo inexistente ou formatação incorreta.
+Dica: Use `df['coluna'].mean()` e `df['coluna'].std()` para obter os resultados estatísticos.
+
+### 2- Escrita de Arquivo CSV
+Crie um programa que escreve dados de pessoas (nome, idade e cidade) em um arquivo CSV. Para isso:
+* Crie uma lista de listas com dados fictícios de pelo menos três pessoas.
+* Solicite ao usuário o nome do arquivo CSV onde os dados serão salvos.
+* Escreva os dados usando o módulo `csv`, com cabeçalhos apropriados.
+* Confirme a gravação exibindo uma mensagem com o nome do arquivo.
+* Trate possíveis erros de escrita de arquivo.
+Dica: Use `csv.writer()` para escrever os dados linha por linha.
+
+### 3- Leitura de Arquivo CSV
+Desenvolva um programa que lê os dados de um arquivo CSV e imprime cada linha na tela. Para isso:
+* Solicite ao usuário o nome do arquivo CSV a ser lido.
+* Utilize o módulo `csv` para abrir o arquivo e ler os dados.
+* Exiba cada linha completa como uma lista.
+* Trate erros como arquivo inexistente ou problemas na leitura.
+Dica: Use `csv.reader()` para ler e percorrer as linhas do arquivo.
+
+### 4- Leitura e Escrita de Arquivo JSON
+Desenvolva um programa que cria um dicionário com dados de uma pessoa e salva esses dados em um arquivo JSON. Em seguida, o programa deve ler o mesmo arquivo e exibir o conteúdo. Para isso:
+* Crie um dicionário com pelo menos três campos (ex: nome, idade, cidade).
+* Solicite ao usuário o nome do arquivo JSON.
+* Salve os dados no arquivo usando o módulo `json`.
+* Após salvar, leia o mesmo arquivo e imprima os dados carregados.
+* Trate possíveis erros como ausência do arquivo ou problemas na escrita.
+Dica: Use `json.dump()` para escrever e `json.load()` para ler o arquivo.
+
+---
+
+
 ## 📖 Conceitos Aprendidos
 
 ### Fundamentos de Python
@@ -419,4 +524,4 @@ Este projeto é para fins educacionais como parte do curso de Inteligência Arti
 
 ---
 
-*Última atualização: Julho 2025*
+*Última atualização: Agosto 2025*
